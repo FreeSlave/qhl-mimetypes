@@ -2,9 +2,9 @@
 <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
     <!-- Sprite types -->
     
-    <mime-type type="application/x-qsprite">
+    <mime-type type="image/x-qsprite">
         <comment>Quake sprite</comment>
-        <icon name="application-x-qsprite"/>
+        <icon name="image-x-qsprite"/>
         <generic-icon name="image-x-generic"/>
         <magic priority="50">
             <match value="IDSP" type="string" offset="0">
@@ -12,11 +12,12 @@
             </match>
         </magic>
         <glob pattern="*.spr"/>
+        <alias type="application/x-qsprite"/>
     </mime-type>
     
-    <mime-type type="application/x-hlsprite">
+    <mime-type type="image/x-hlsprite">
         <comment>Half-Life sprite</comment>
-        <icon name="application-x-hlsprite"/>
+        <icon name="image-x-hlsprite"/>
         <generic-icon name="image-x-generic"/>
         <magic priority="50">
             <match value="IDSP" type="string" offset="0">
@@ -24,16 +25,18 @@
             </match>
         </magic>
         <glob pattern="*.spr"/>
+        <alias type="application/x-hlsprite"/>
     </mime-type>
     
-    <mime-type type="application/x-q2sprite">
+    <mime-type type="image/x-q2sprite">
         <comment>Quake II sprite</comment>
-        <icon name="application-x-q2sprite"/>
+        <icon name="image-x-q2sprite"/>
         <generic-icon name="image-x-generic"/>
         <magic priority="50">
             <match value="IDS2" type="string" offset="0"/>
         </magic>
         <glob pattern="*.sp2"/>
+        <alias type="image/x-q2sprite"/>
     </mime-type>
     
     <!-- Text files -->
@@ -50,7 +53,7 @@
         <comment>Map source file</comment>
         <icon name="application-x-map"/>
         <magic priority="50">
-            <match value="{" type="string" offset="0"/>
+            <match value="&quot;classname&quot; &quot;worldspawn&quot;" type="string" offset="2"/>
         </magic>
         <glob pattern="*.map"/>
     </mime-type>
@@ -150,5 +153,56 @@
         </magic>
         <glob pattern="*.iqm"/>
     </mime-type>
-        
+    
+    <!-- Compiled map types -->
+    <mime-type type="application/x-qbsp">
+        <comment>Quake game level</comment>
+        <icon name="application-x-qbsp"/>
+        <magic priority="50">
+            <match value="0x0000001d" type="little32" offset="0"/>
+        </magic>
+        <glob pattern="*.bsp"/>
+    </mime-type>
+    
+    <mime-type type="application/x-q2bsp">
+        <comment>Quake II game level</comment>
+        <icon name="application-x-q2bsp"/>
+        <magic priority="50">
+            <match value="IBSP" type="string" offset="0">
+                <match value="0x00000026" type="little32" offset="4"/>
+            </match>
+        </magic>
+        <glob pattern="*.bsp"/>
+    </mime-type>
+    
+    <mime-type type="application/x-q3bsp">
+        <comment>Quake III game level</comment>
+        <icon name="application-x-q3bsp"/>
+        <magic priority="50">
+            <match value="IBSP" type="string" offset="0">
+                <match value="0x0000002e" type="little32" offset="4"/>
+                <match value="0x0000002f" type="little32" offset="4"/>
+            </match>
+        </magic>
+        <glob pattern="*.bsp"/>
+    </mime-type>
+    
+    <mime-type type="application/x-hlbsp">
+        <comment>GoldSrc game level</comment>
+        <icon name="application-x-hlbsp"/>
+        <magic priority="50">
+            <match value="0x0000001e" type="little32" offset="0"/>
+        </magic>
+        <glob pattern="*.bsp"/>
+    </mime-type>
+    
+    <mime-type type="application/x-hl2bsp">
+        <comment>Source engine game level</comment>
+        <icon name="application-x-hl2bsp"/>
+        <magic priority="50">
+            <match value="VBSP" type="string" offset="0"/>
+        </magic>
+        <glob pattern="*.bsp"/>
+    </mime-type>
+    
 </mime-info>
