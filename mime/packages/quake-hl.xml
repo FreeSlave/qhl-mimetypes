@@ -187,6 +187,15 @@
         <glob pattern="*.md3"/>
     </mime-type>
     
+    <mime-type type="application/x-md4">
+        <comment>Quake IV model</comment>
+        <icon name="application-x-md4"/>
+        <magic priority="50">
+            <match value="IDP4" type="string" offset="0"/>
+        </magic>
+        <glob pattern="*.md4"/>
+    </mime-type>
+    
     <mime-type type="application/x-iqm">
         <comment>Inter-Quake Model</comment>
         <icon name="application-x-iqm"/>
