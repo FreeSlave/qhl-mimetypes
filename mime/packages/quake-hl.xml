@@ -56,7 +56,7 @@
     
     <!-- Text files -->
     <mime-type type="text/x-fgd">
-        <comment>Game entity definions file</comment>
+        <comment>Game entity definitions file</comment>
         <sub-class-of type="text/plain"/>
         <icon name="text-x-fgd"/>
         <glob pattern="*.fgd"/>
