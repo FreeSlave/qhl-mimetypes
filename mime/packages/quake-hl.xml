@@ -116,6 +116,16 @@
     
     <!-- Texture archive formats -->
     
+    <mime-type type="application/x-wad2">
+        <comment>Quake WAD package</comment>
+        <icon name="application-x-wad2"/>
+        <generic-icon name="package-x-generic"/>
+        <magic priority="50">
+            <match value="WAD2" type="string" offset="0"/>
+        </magic>
+        <glob pattern="*.wad"/>
+    </mime-type>
+    
     <mime-type type="application/x-wad3">
         <comment>Half-Life WAD package</comment>
         <icon name="application-x-wad3"/>
