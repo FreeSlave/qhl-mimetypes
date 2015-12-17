@@ -62,6 +62,13 @@
         <glob pattern="*.fgd"/>
     </mime-type>
     
+    <mime-type type="text/x-qcsrc">
+        <comment>QuakeC script</comment>
+        <sub-class-of type="text/x-csrc"/>
+        <icon name="text-x-qcsrc"/>
+        <glob pattern="*.qc"/>
+    </mime-type>
+    
     
     <!-- Map source formats -->
     <mime-type type="application/x-map">
@@ -115,7 +122,6 @@
     </mime-type>
     
     <!-- Texture archive formats -->
-    
     <mime-type type="application/x-wad2">
         <comment>Quake WAD package</comment>
         <icon name="application-x-wad2"/>
@@ -134,6 +140,20 @@
             <match value="WAD3" type="string" offset="0"/>
         </magic>
         <glob pattern="*.wad"/>
+    </mime-type>
+    
+    <!-- Textures -->
+    
+    <mime-type type="application/x-lmp">
+        <comment>Quake lump file</comment>
+        <icon name="application-x-lmp"/>
+        <glob pattern="*.lmp"/>
+    </mime-type>
+    
+    <mime-type type="application/x-wal">
+        <comment>Quake II wal texture</comment>
+        <icon name="application-x-wal"/>
+        <glob pattern="*.wal"/>
     </mime-type>
     
     <!-- Model types -->
