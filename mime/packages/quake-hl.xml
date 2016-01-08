@@ -63,13 +63,6 @@
     </mime-type>
     
     <mime-type type="text/x-qcsrc">
-        <comment>QuakeC script</comment>
-        <sub-class-of type="text/x-csrc"/>
-        <icon name="text-x-qcsrc"/>
-        <glob pattern="*.qc"/>
-    </mime-type>
-    
-    <mime-type type="text/x-qcsrc">
         <comment>QuakeC source code</comment>
         <sub-class-of type="text/x-csrc"/>
         <icon name="text-x-qcsrc"/>
@@ -86,7 +79,7 @@
     <mime-type type="text/x-q3shader">
         <comment>Quake III shader script</comment>
         <sub-class-of type="text/plain"/>
-        <icon name="text-x-q3shaderr"/>
+        <icon name="text-x-q3shader"/>
         <glob pattern="*.shader"/>
     </mime-type>
     
