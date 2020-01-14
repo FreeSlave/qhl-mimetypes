@@ -1,0 +1,5 @@
+.gitattributes export-ignore
+.gitignore export-ignore
+generate-png-images.sh export-ignore
+install-icons.sh export-ignore
+install-mime-types.sh export-ignore
