@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
-    <mime-type type="application/x-jmf">
-        <comment>Jackhammer map file</comment>
-        <icon name="application-x-jmf"/>
+    <mime-type type="model/x-jmf">
+        <comment>J.A.C.K. map source</comment>
+        <icon name="model-x-jmf"/>
         <magic priority="60">
             <match value="JHMF" type="string" offset="0"/>
         </magic>
         <glob pattern="*.jmf"/>
+        <acronym>JMF</acronym>
+        <expanded-acronym>J.A.C.K. Map Format</expanded-acronym>
     </mime-type>
-    
-    <mime-type type="application/x-jmx">
-        <comment>Jackhammer map file (backup)</comment>
-        <sub-class-of type="application/x-jmf"/>
-        <icon name="application-x-jmf"/>
+
+    <mime-type type="model/x-jmx">
+        <comment>J.A.C.K. map source (backup)</comment>
+        <sub-class-of type="model/x-jmf"/>
+        <icon name="model-x-jmf"/>
         <magic priority="60">
             <match value="JHMF" type="string" offset="0"/>
         </magic>

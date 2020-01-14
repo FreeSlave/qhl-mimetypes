@@ -17,10 +17,10 @@ This repository contains icons for some types.
 Run to generate png-images from svg sources:
 
     sh generate-png-images.sh # Note: requires inkscape to be installed in PATH.
-    
+
 Run to install icons in user space:
 
-    sh  install-icons.sh
+    sh install-icons.sh
 
 ## License
 
